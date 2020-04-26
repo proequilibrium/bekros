@@ -1,0 +1,1491 @@
+<div class="content_pt">
+    <div class="poptat_tisk" id="poptat_tisk">
+
+        <div class="pt_vlevo">
+            <div class="pt_form">
+                <div class="pt_form_container">
+                    <h2>Zadejte detaily Vaší zakázky a zjistěte cenu</h2>
+
+                    <form action="poptat_tisk.php" enctype="multipart/form-data" method="post" name="formular"
+                        id="formul">
+                        <div class="polozka1">
+                            <ul>
+                                <li>
+                                    <h4>Jméno:</h4>
+                                </li>
+                                <li>
+                                    <div class="pole1"><input type="text" name="jmeno" class="input1" id="jmeno" />
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="polozka1">
+                            <ul>
+                                <li>
+                                    <h4>E-mail:</h4>
+                                </li>
+                                <li>
+                                    <div class="pole1"><input type="text" name="email" class="input1" id="email" />
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="polozka1">
+                            <ul>
+                                <li>
+                                    <h4>Telefon:</h4>
+                                </li>
+                                <li>
+                                    <div class="pole1"><input type="text" name="telefon" class="input1" /></div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <br>
+                        <div class="polozka1" id="typ_tiskoviny">
+                            <ul>
+                                <li>
+                                    <h4>Typ tiskoviny:</h4>
+                                </li>
+                                <li>
+                                    <div class="pole2">
+                                        <select name="typ" id="typ_select">
+                                            <option value="vizitky">vizitky</option>
+                                            <option value="letáky">letáky</option>
+                                            <option value="brožury, knihy">brožury, knihy</option>
+                                            <option value="katalogy, časopisy, zpravodaje">katalogy, časopisy,
+                                                zpravodaje</option>
+                                            <option value="kalendáře">kalendáře</option>
+                                            <option value="plakáty">plakáty</option>
+                                            <option value="prezentační desky">prezentační desky</option>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+
+
+                        <div id="poptavka_vizitky">
+                            <div class="polozka1" id="vizitky_pocet_kusu">
+                                <ul>
+                                    <li>
+                                        <h4>Počet kusů:<br>(max. 3 varianty)</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="vizitky_kusy1" class="input3"
+                                                id="vizitky_kusy1" /></div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="vizitky_kusy2" class="input3" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="vizitky_kusy3" class="input3" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="vizitky_format">
+                                <ul>
+                                    <li>
+                                        <h4>Formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="vizitky_format" id="vizitky_format_select">
+                                                <option value="" selected></option>
+                                                <option value="90x50 mm (vizitky)">90x50 mm (vizitky)</option>
+                                                <option value="85x55 mm (vizitky)">85x55 mm (vizitky)</option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="vizitky_format_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="vizitky_format_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="vizitky_typ_papiru">
+                                <ul>
+                                    <li>
+                                        <h4>Typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="vizitky_papir" id="vizitky_papir_select">
+                                                <option value="" selected></option>
+                                                <option value="ofset (250g)">ofset (250g)</option>
+                                                <option value="křída matná (250g)">křída matná (250g)</option>
+                                                <option value="křída matná (300g)">křída matná (300g)</option>
+                                                <option value="křída lesklá (250g)">křída lesklá (250g)</option>
+                                                <option value="křída lesklá (300g)">křída lesklá (300g)</option>
+                                                <option value="strukturovaný (250g)">strukturovaný (250g)
+                                                </option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="vizitky_papir_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="vizitky_papir_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="vizitky_barevnost">
+                                <ul>
+                                    <li>
+                                        <h4>Barevnost:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="vizitky_barevnost" id="vizitky_barevnost1">
+                                                <option value="" selected></option>
+                                                <option value="Jednobarevná (černá nebo přímá)">Jednobarevná
+                                                    (černá nebo přímá)</option>
+                                                <option value="Dvoubarevná (černá + přímá)">Dvoubarevná (černá +
+                                                    přímá)</option>
+                                                <option value="Plnobarevná (plnobarevný tisk)">Plnobarevná
+                                                    (plnobarevný tisk)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="polozka1">
+                                <ul>
+                                    <li>
+                                        <h4>Oboustranný tisk:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="vizitky_oboustranny" id="vizitky_oboustranny1">
+                                                <option value="" selected></option>
+                                                <option value="Ano">Ano</option>
+                                                <option value="Ne">Ne</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="vizitky_povrchova_uprava">
+                                <ul>
+                                    <li>
+                                        <h4>Povrchová úprava:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="vizitky_povrch">
+                                                <option value="bez povrchové úpravy">bez povrchové úpravy
+                                                </option>
+                                                <option value="laminace">laminace</option>
+                                                <option value="lak">lak</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div><!-- /vizitky -->
+
+
+                        <div id="poptavka_letaky">
+                            <div class="polozka1" id="letaky_pocet_kusu">
+                                <ul>
+                                    <li>
+                                        <h4>Počet kusů:<br>(max. 3 varianty)</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="letaky_kusy1" class="input3"
+                                                id="letaky_kusy1" /></div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="letaky_kusy2" class="input3" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="letaky_kusy3" class="input3" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="letaky_format">
+                                <ul>
+                                    <li>
+                                        <h4>Formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="letaky_format" id="letaky_format_select">
+                                                <option value="" selected></option>
+
+                                                <option value="DL ( 210 x 99 mm)">DL ( 210 x 99 mm)</option>
+                                                <option value="A6 (105 x 148 mm)">A6 (105 x 148 mm)</option>
+                                                <option value="A5 (148 x 210 mm)">A5 (148 x 210 mm)</option>
+                                                <option value="A4 (210 x 297 mm)">A4 (210 x 297 mm)</option>
+                                                <option value="A3 (297 x 420 mm)">A3 (297 x 420 mm)</option>
+                                                <option value="SRA3 (420 x 594 mm)">SRA3 (420 x 594 mm)</option>
+                                                <option value="A2 (420 x 594 mm)">A2 (420 x 594 mm)</option>
+                                                <option value="A1 (594 x 841 mm)">A1 (594 x 841 mm)</option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="letaky_format_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="letaky_format_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="letaky_typ_papiru">
+                                <ul>
+                                    <li>
+                                        <h4>Typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="letaky_papir" id="letaky_papir_select">
+                                                <option value="" selected></option>
+                                                <option value="ofset (70g)">ofset (70g)</option>
+                                                <option value="ofset (170g)">ofset (170g)</option>
+                                                <option value="ofset (190g)">ofset (190g)</option>
+                                                <option value="ofset (250g)">ofset (250g)</option>
+                                                <option value="křída matná (115g)">křída matná (115g)</option>
+                                                <option value="křída matná (130g)">křída matná (130g)</option>
+                                                <option value="křída matná (250g)">křída matná (250g)</option>
+                                                <option value="křída matná (300g)">křída matná (300g)</option>
+                                                <option value="křída lesklá (115g)">křída lesklá (115g)</option>
+                                                <option value="křída lesklá (130g)">křída lesklá (130g)</option>
+                                                <option value="křída lesklá (250g)">křída lesklá (250g)</option>
+                                                <option value="křída lesklá (300g)">křída lesklá (300g)</option>
+                                                <option value="strukturovaný (250g)">strukturovaný (250g)
+                                                </option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="letaky_papir_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="letaky_papir_jine" class="input1" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="letaky_barevnost">
+                                <ul>
+                                    <li>
+                                        <h4>Barevnost:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="letaky_barevnost" id="letaky_barevnost1">
+                                                <option value="" selected></option>
+                                                <option value="Jednobarevná (černá nebo přímá)">Jednobarevná
+                                                    (černá nebo přímá)</option>
+                                                <option value="Dvoubarevná (černá + přímá)">Dvoubarevná (černá +
+                                                    přímá)</option>
+                                                <option value="Plnobarevná (plnobarevný tisk)">Plnobarevná
+                                                    (plnobarevný tisk)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="polozka1" id="letaky_oboustranny_tisk">
+                                <ul>
+                                    <li>
+                                        <h4>Oboustranný tisk:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="letaky_oboustranny" id="letaky_oboustranny1">
+                                                <option value="" selected></option>
+                                                <option value="Ano">Ano</option>
+                                                <option value="Ne">Ne</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="letaky_skladani">
+                                <ul>
+                                    <li>
+                                        <h4>Skládání:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="letaky_skladani" id="letaky_skladani_select">
+                                                <option value="" selected></option>
+                                                <option value="Žádný lom">Žádný lom</option>
+                                                <option value="1 lom">1 lom</option>
+                                                <option value="2 lomy">2 lomy</option>
+                                                <option value="3 lomy">3 lomy</option>
+                                                <option value="4 lomy">4 lomy</option>
+                                                <option value="5 lomů">5 lomů</option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="letaky_skladani_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiné skládání:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="letaky_skladani_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div><!-- /letaky -->
+
+                        <div id="poptavka_brozury">
+                            <div class="polozka1" id="brozury_pocet_kusu">
+                                <ul>
+                                    <li>
+                                        <h4>Počet kusů:<br>(max. 3 varianty)</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="brozury_kusy1" class="input3"
+                                                id="brozury_kusy1" /></div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="brozury_kusy2" class="input3" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="brozury_kusy3" class="input3" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="brozury_format">
+                                <ul>
+                                    <li>
+                                        <h4>Formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="brozury_format" id="brozury_format_select">
+                                                <option value="" selected></option>
+
+                                                <option value="DL ( 210 x 99 mm)">DL ( 210 x 99 mm)</option>
+                                                <option value="A6 (105 x 148 mm)">A6 (105 x 148 mm)</option>
+                                                <option value="A5 (148 x 210 mm)">A5 (148 x 210 mm)</option>
+                                                <option value="A4 (210 x 297 mm)">A4 (210 x 297 mm)</option>
+                                                <option value="A3 (297 x 420 mm)">A3 (297 x 420 mm)</option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="brozury_format_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="brozury_format_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="brozury_pocet_stran_bez_obalky">
+                                <ul>
+                                    <li>
+                                        <h4>Počet stran bez obálky:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="brozury_psbo" class="input1"
+                                                id="brozury_psbo1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="brozury_typ_papiru_obalka">
+                                <ul>
+                                    <li>
+                                        <h4>Typ papíru obálka:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="brozury_papir_obalka" id="brozury_papir_obalka_select">
+                                                <option value="" selected></option>
+                                                <option value="ofset (70g)">ofset (70g)</option>
+                                                <option value="ofset (170g)">ofset (170g)</option>
+                                                <option value="ofset (190g)">ofset (190g)</option>
+                                                <option value="ofset (250g)">ofset (250g)</option>
+                                                <option value="křída matná (115g)">křída matná (115g)</option>
+                                                <option value="křída matná (130g)">křída matná (130g)</option>
+                                                <option value="křída matná (250g)">křída matná (250g)</option>
+                                                <option value="křída matná (300g)">křída matná (300g)</option>
+                                                <option value="křída lesklá (115g)">křída lesklá (115g)</option>
+                                                <option value="křída lesklá (130g)">křída lesklá (130g)</option>
+                                                <option value="křída lesklá (250g)">křída lesklá (250g)</option>
+                                                <option value="křída lesklá (300g)">křída lesklá (300g)</option>
+                                                <option value="strukturovaný (250g)">strukturovaný (250g)
+                                                </option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="brozury_papir_obalka_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="brozury_papir_obalka_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="brozury_typ_papiru_vnitrek">
+                                <ul>
+                                    <li>
+                                        <h4>Typ papíru vnitřek:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="brozury_papir_vnitrek" id="brozury_papir_vnitrek_select">
+                                                <option value="" selected></option>
+                                                <option value="ofset (70g)">ofset (70g)</option>
+                                                <option value="ofset (170g)">ofset (170g)</option>
+                                                <option value="ofset (190g)">ofset (190g)</option>
+                                                <option value="ofset (250g)">ofset (250g)</option>
+                                                <option value="křída matná (115g)">křída matná (115g)</option>
+                                                <option value="křída matná (130g)">křída matná (130g)</option>
+                                                <option value="křída matná (250g)">křída matná (250g)</option>
+                                                <option value="křída matná (300g)">křída matná (300g)</option>
+                                                <option value="křída lesklá (115g)">křída lesklá (115g)</option>
+                                                <option value="křída lesklá (130g)">křída lesklá (130g)</option>
+                                                <option value="křída lesklá (250g)">křída lesklá (250g)</option>
+                                                <option value="křída lesklá (300g)">křída lesklá (300g)</option>
+                                                <option value="strukturovaný (250g)">strukturovaný (250g)
+                                                </option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="brozury_papir_vnitrek_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="brozury_papir_vnitrek_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="letaky_barevnost">
+                                <ul>
+                                    <li>
+                                        <h4>Barevnost:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="brozury_barevnost" id="brozury_barevnost1">
+                                                <option value="" selected></option>
+                                                <option value="Jednobarevná (černá nebo přímá)">Jednobarevná
+                                                    (černá nebo přímá)</option>
+                                                <option value="Dvoubarevná (černá + přímá)">Dvoubarevná (černá +
+                                                    přímá)</option>
+                                                <option value="Plnobarevná (plnobarevný tisk)">Plnobarevná
+                                                    (plnobarevný tisk)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="polozka1" id="brozury_oboustranny_tisk">
+                                <ul>
+                                    <li>
+                                        <h4>Oboustranný tisk:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="brozury_oboustranny" id="brozury_oboustranny1">
+                                                <option value="" selected></option>
+                                                <option value="Ano">Ano</option>
+                                                <option value="Ne">Ne</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="brozury_povrchova_uprava">
+                                <ul>
+                                    <li>
+                                        <h4>Povrchová úprava:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="brozury_povrch">
+                                                <option value="bez povrchové úpravy">bez povrchové úpravy
+                                                </option>
+                                                <option value="laminace">laminace</option>
+                                                <option value="lak">lak</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="brozury_kniharske_zpracovani">
+                                <ul>
+                                    <li>
+                                        <h4>Knihařské zpracování:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="brozury_kniharske_zpracovani"
+                                                id="brozury_kniharske_zpracovani1">
+                                                <option value="" selected></option>
+                                                <option value="V1: vazba šitá, dvě skobičky">V1: vazba šitá, dvě
+                                                    skobičky</option>
+                                                <option value="V2: vazba lepená - paperback">V2: vazba lepená -
+                                                    paperback</option>
+                                                <option value="V8: pevná knižní vazba">V8: pevná knižní vazba
+                                                </option>
+                                                <option value="vložené do sebe bez šití">vložené do sebe bez
+                                                    šití</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div><!-- /brozury -->
+
+                        <div id="poptavka_katalogy">
+                            <div class="polozka1" id="katalogy_pocet_kusu">
+                                <ul>
+                                    <li>
+                                        <h4>Počet kusů:<br>(max. 3 varianty)</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="katalogy_kusy1" class="input3"
+                                                id="katalogy_kusy1" /></div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="katalogy_kusy2" class="input3" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="katalogy_kusy3" class="input3" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="katalogy_format">
+                                <ul>
+                                    <li>
+                                        <h4>Formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="katalogy_format" id="katalogy_format_select">
+                                                <option value="" selected></option>
+                                                <option value="DL ( 210 x 99 mm)">DL ( 210 x 99 mm)</option>
+                                                <option value="A6 (105 x 148 mm)">A6 (105 x 148 mm)</option>
+                                                <option value="A5 (148 x 210 mm)">A5 (148 x 210 mm)</option>
+                                                <option value="A4 (210 x 297 mm)">A4 (210 x 297 mm)</option>
+                                                <option value="A3 (297 x 420 mm)">A3 (297 x 420 mm)</option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="katalogy_format_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="katalogy_format_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="katalogy_pocet_stran_bez_obalky">
+                                <ul>
+                                    <li>
+                                        <h4>Počet stran bez obálky:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="katalogy_psbo" class="input1"
+                                                id="katalogy_pbso1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="katalogy_typ_papiru_obalka">
+                                <ul>
+                                    <li>
+                                        <h4>Typ papíru obálka:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="katalogy_papir_obalka" id="katalogy_papir_obalka_select">
+                                                <option value="" selected></option>
+                                                <option value="ofset (70g)">ofset (70g)</option>
+                                                <option value="ofset (170g)">ofset (170g)</option>
+                                                <option value="ofset (190g)">ofset (190g)</option>
+                                                <option value="ofset (250g)">ofset (250g)</option>
+                                                <option value="křída matná (115g)">křída matná (115g)</option>
+                                                <option value="křída matná (130g)">křída matná (130g)</option>
+                                                <option value="křída matná (250g)">křída matná (250g)</option>
+                                                <option value="křída matná (300g)">křída matná (300g)</option>
+                                                <option value="křída lesklá (115g)">křída lesklá (115g)</option>
+                                                <option value="křída lesklá (130g)">křída lesklá (130g)</option>
+                                                <option value="křída lesklá (250g)">křída lesklá (250g)</option>
+                                                <option value="křída lesklá (300g)">křída lesklá (300g)</option>
+                                                <option value="strukturovaný (250g)">strukturovaný (250g)
+                                                </option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="katalogy_papir_obalka_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="katalogy_papir_obalka_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="katalogy_typ_papiru_vnitrek">
+                                <ul>
+                                    <li>
+                                        <h4>Typ papíru vnitřek:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="katalogy_papir_vnitrek" id="katalogy_papir_vnitrek_select">
+                                                <option value="" selected></option>
+                                                <option value="ofset (70g)">ofset (70g)</option>
+                                                <option value="ofset (170g)">ofset (170g)</option>
+                                                <option value="ofset (190g)">ofset (190g)</option>
+                                                <option value="ofset (250g)">ofset (250g)</option>
+                                                <option value="křída matná (115g)">křída matná (115g)</option>
+                                                <option value="křída matná (130g)">křída matná (130g)</option>
+                                                <option value="křída matná (250g)">křída matná (250g)</option>
+                                                <option value="křída matná (300g)">křída matná (300g)</option>
+                                                <option value="křída lesklá (115g)">křída lesklá (115g)</option>
+                                                <option value="křída lesklá (130g)">křída lesklá (130g)</option>
+                                                <option value="křída lesklá (250g)">křída lesklá (250g)</option>
+                                                <option value="křída lesklá (300g)">křída lesklá (300g)</option>
+                                                <option value="strukturovaný (250g)">strukturovaný (250g)
+                                                </option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="katalogy_papir_vnitrek_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="katalogy_papir_vnitrek_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="katalogy_barevnost">
+                                <ul>
+                                    <li>
+                                        <h4>Barevnost:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="katalogy_barevnost" id="katalogy_barevnost1">
+                                                <option value="" selected></option>
+                                                <option value="Jednobarevná (černá nebo přímá)">Jednobarevná
+                                                    (černá nebo přímá)</option>
+                                                <option value="Dvoubarevná (černá + přímá)">Dvoubarevná (černá +
+                                                    přímá)</option>
+                                                <option value="Plnobarevná (plnobarevný tisk)">Plnobarevná
+                                                    (plnobarevný tisk)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+
+                            <div class="polozka1" id="katalogy_oboustranny_tisk">
+                                <ul>
+                                    <li>
+                                        <h4>Oboustranný tisk:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="katalogy_oboustranny" id="katalogy_oboustranny1">
+                                                <option value="" selected></option>
+                                                <option value="Ano">Ano</option>
+                                                <option value="Ne">Ne</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="katalogy_povrchova_uprava">
+                                <ul>
+                                    <li>
+                                        <h4>Povrchová úprava:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="katalogy_povrch">
+                                                <option value="bez povrchové úpravy">bez povrchové úpravy
+                                                </option>
+                                                <option value="laminace">laminace</option>
+                                                <option value="lak">lak</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="katalogy_kniharske_zpracovani">
+                                <ul>
+                                    <li>
+                                        <h4>Knihařské zpracování:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="katalogy_kniharske_zpracovani"
+                                                id="katalogy_kniharske_zpracovani1">
+                                                <option value="" selected></option>
+                                                <option value="V1: vazba šitá, dvě skobičky">V1: vazba šitá, dvě
+                                                    skobičky</option>
+                                                <option value="V2: vazba lepená - paperback">V2: vazba lepená -
+                                                    paperback</option>
+                                                <option value="V8: pevná knižní vazba">V8: pevná knižní vazba
+                                                </option>
+                                                <option value="vložené do sebe bez šití">vložené do sebe bez
+                                                    šití</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div><!-- /katalogy -->
+
+                        <div id="poptavka_kalendare">
+                            <div class="polozka1" id="kalendare_pocet_kusu">
+                                <ul>
+                                    <li>
+                                        <h4>Počet kusů:<br>(max. 3 varianty)</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="kalendare_kusy1" class="input3"
+                                                id="kalendare_kusy1" /></div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="kalendare_kusy2" class="input3" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="kalendare_kusy3" class="input3" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="kalendare_format">
+                                <ul>
+                                    <li>
+                                        <h4>Formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="kalendare_format" id="kalendare_format_select">
+                                                <option value="" selected></option>
+                                                <option value="A6 (105 x 148 mm)">A6 (105 x 148 mm)</option>
+                                                <option value="A5 (148 x 210 mm)">A5 (148 x 210 mm)</option>
+                                                <option value="A4 (210 x 297 mm)">A4 (210 x 297 mm)</option>
+                                                <option value="A3 (297 x 420 mm)">A3 (297 x 420 mm)</option>
+                                                <option value="SRA3 (420 x 594 mm)">SRA3 (420 x 594 mm)</option>
+                                                <option value="A2 (420 x 594 mm)">A2 (420 x 594 mm)</option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="kalendare_format_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="kalendare_format_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="kalendare_typ_papiru">
+                                <ul>
+                                    <li>
+                                        <h4>Typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="kalendare_papir" id="kalendare_papir_select">
+                                                <option value="" selected></option>
+                                                <option value="ofset (70g)">ofset (70g)</option>
+                                                <option value="ofset (170g)">ofset (170g)</option>
+                                                <option value="ofset (190g)">ofset (190g)</option>
+                                                <option value="ofset (250g)">ofset (250g)</option>
+                                                <option value="křída matná (115g)">křída matná (115g)</option>
+                                                <option value="křída matná (130g)">křída matná (130g)</option>
+                                                <option value="křída matná (250g)">křída matná (250g)</option>
+                                                <option value="křída matná (300g)">křída matná (300g)</option>
+                                                <option value="křída lesklá (115g)">křída lesklá (115g)</option>
+                                                <option value="křída lesklá (130g)">křída lesklá (130g)</option>
+                                                <option value="křída lesklá (250g)">křída lesklá (250g)</option>
+                                                <option value="křída lesklá (300g)">křída lesklá (300g)</option>
+                                                <option value="strukturovaný (250g)">strukturovaný (250g)
+                                                </option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="kalendare_papir_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="kalendare_papir_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="kalendare_pocet_listu">
+                                <ul>
+                                    <li>
+                                        <h4>Počet listů:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="kalendare_listy" class="input1"
+                                                id="katalogy_listy1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="kalendare_podlozka">
+                                <ul>
+                                    <li>
+                                        <h4>Podložka:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="kalendare_podlozka" id="kalendare_podlozka_select">
+                                                <option value="" selected></option>
+                                                <option value="ano">ano</option>
+                                                <option value="ne">ne</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="kalendare_potisk_podlozky">
+                                <ul>
+                                    <li>
+                                        <h4>Potisk podložky:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="kalendare_potisk_podlozky">
+                                                <option value="" selected></option>
+                                                <option value="ano">ano</option>
+                                                <option value="ne">ne</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="kalendare_povrchova_uprava">
+                                <ul>
+                                    <li>
+                                        <h4>Povrchová úprava:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="kalendare_povrch">
+                                                <option value="bez povrchové úpravy" selected>bez povrchové
+                                                    úpravy</option>
+                                                <option value="laminace">laminace</option>
+                                                <option value="lak">lak</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="kalendare_bkks">
+                                <ul>
+                                    <li>
+                                        <h4>Barva kroužkové kovové spirály:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="kalendare_bkks" id="kalendare_bkks1">
+                                                <option value="" selected></option>
+                                                <option value="černá">černá</option>
+                                                <option value="bílá">bílá</option>
+                                                <option value="stříbrná">stříbrná</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div><!-- /kalendare -->
+
+                        <div id="poptavka_plakaty">
+                            <div class="polozka1" id="plakaty_pocet_kusu">
+                                <ul>
+                                    <li>
+                                        <h4>Počet kusů:<br>(max. 3 varianty)</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="plakaty_kusy1" class="input3"
+                                                id="plakaty_kusy1" /></div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="plakaty_kusy2" class="input3" />
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="plakaty_kusy3" class="input3" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="plakaty_format">
+                                <ul>
+                                    <li>
+                                        <h4>Formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="plakaty_format" id="plakaty_format_select">
+                                                <option value="" selected></option>
+                                                <option value="A6 (105 x 148 mm)">A6 (105 x 148 mm)</option>
+                                                <option value="A5 (148 x 210 mm)">A5 (148 x 210 mm)</option>
+                                                <option value="A4 (210 x 297 mm)">A4 (210 x 297 mm)</option>
+                                                <option value="A3 (297 x 420 mm)">A3 (297 x 420 mm)</option>
+                                                <option value="SRA3 (420 x 594 mm)">SRA3 (420 x 594 mm)</option>
+                                                <option value="A2 (420 x 594 mm)">A2 (420 x 594 mm)</option>
+                                                <option value="A1 (594 x 841 mm)">A1 (594 x 841 mm)</option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="plakaty_format_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="plakaty_format_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="plakaty_typ_papiru">
+                                <ul>
+                                    <li>
+                                        <h4>Typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="plakaty_papir" id="plakaty_papir_select">
+                                                <option value="" selected></option>
+                                                <option value="ofset (70g)">ofset (70g)</option>
+                                                <option value="ofset (170g)">ofset (170g)</option>
+                                                <option value="ofset (190g)">ofset (190g)</option>
+                                                <option value="ofset (250g)">ofset (250g)</option>
+                                                <option value="křída matná (115g)">křída matná (115g)</option>
+                                                <option value="křída matná (130g)">křída matná (130g)</option>
+                                                <option value="křída matná (250g)">křída matná (250g)</option>
+                                                <option value="křída matná (300g)">křída matná (300g)</option>
+                                                <option value="křída lesklá (115g)">křída lesklá (115g)</option>
+                                                <option value="křída lesklá (130g)">křída lesklá (130g)</option>
+                                                <option value="křída lesklá (250g)">křída lesklá (250g)</option>
+                                                <option value="křída lesklá (300g)">křída lesklá (300g)</option>
+                                                <option value="strukturovaný (250g)">strukturovaný (250g)
+                                                </option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="plakaty_papir_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="plakaty_papir_jine"
+                                                class="input1" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="plakaty_barevnost">
+                                <ul>
+                                    <li>
+                                        <h4>Barevnost:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="plakaty_barevnost" id="plakaty_barevnost1">
+                                                <option value="" selected></option>
+                                                <option value="Jednobarevná (černá nebo přímá)">Jednobarevná
+                                                    (černá nebo přímá)</option>
+                                                <option value="Dvoubarevná (černá + přímá)">Dvoubarevná (černá +
+                                                    přímá)</option>
+                                                <option value="Plnobarevná (plnobarevný tisk)">Plnobarevná
+                                                    (plnobarevný tisk)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="plakaty_oboustranny_tisk">
+                                <ul>
+                                    <li>
+                                        <h4>Oboustranný tisk:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="plakaty_oboustranny" id="plakaty_oboustranny1">
+                                                <option value="" selected></option>
+                                                <option value="Ano">Ano</option>
+                                                <option value="Ne">Ne</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="plakaty_povrchova_uprava">
+                                <ul>
+                                    <li>
+                                        <h4>Povrchová úprava:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="plakaty_povrch">
+                                                <option value="bez povrchové úpravy">bez povrchové úpravy
+                                                </option>
+                                                <option value="laminace">laminace</option>
+                                                <option value="lak">lak</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div><!-- /plakaty -->
+
+                        <div id="poptavka_desky">
+                            <div class="polozka1" id="desky_pocet_kusu">
+                                <ul>
+                                    <li>
+                                        <h4>Počet kusů:<br>(max. 3 varianty)</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="desky_kusy1" class="input3"
+                                                id="desky_kusy1" /></div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="desky_kusy2" class="input3" /></div>
+                                    </li>
+                                    <li>
+                                        <div class="pole3"><input type="text" name="desky_kusy3" class="input3" /></div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="desky_format">
+                                <ul>
+                                    <li>
+                                        <h4>Formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="desky_format" id="desky_format_select">
+                                                <option value="" selected></option>
+                                                <option value="A4+">A4+</option>
+                                                <option value="A5+">A5+ </option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="desky_format_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný formát:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="desky_format_jine" class="input1" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="plakaty_typ_papiru">
+                                <ul>
+                                    <li>
+                                        <h4>Typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="desky_papir" id="desky_papir_select">
+                                                <option value="" selected></option>
+                                                <option value="ofset (250g)">ofset (250g)</option>
+                                                <option value="křída matná (250g)">křída matná (250g)</option>
+                                                <option value="křída matná (300g)">křída matná (300g)</option>
+                                                <option value="křída lesklá (250g)">křída lesklá (250g)</option>
+                                                <option value="křída lesklá (300g)">křída lesklá (300g)</option>
+                                                <option value="jiný (uveďte)">jiný (uveďte)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="desky_papir_jine">
+                                <ul>
+                                    <li>
+                                        <h4>Jiný typ papíru:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole1"><input type="text" name="desky_papir_jine" class="input1" />
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="desky_barevnost">
+                                <ul>
+                                    <li>
+                                        <h4>Barevnost:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="desky_barevnost" id="desky_barevnost1">
+                                                <option value="" selected></option>
+                                                <option value="Jednobarevná (černá nebo přímá)">Jednobarevná
+                                                    (černá nebo přímá)</option>
+                                                <option value="Dvoubarevná (černá + přímá)">Dvoubarevná (černá +
+                                                    přímá)</option>
+                                                <option value="Plnobarevná (plnobarevný tisk)">Plnobarevná
+                                                    (plnobarevný tisk)</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="desky_oboustranny_tisk">
+                                <ul>
+                                    <li>
+                                        <h4>Oboustranný tisk:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="desky_oboustranny" id="desky_oboustranny1">
+                                                <option value="" selected></option>
+                                                <option value="Ano">Ano</option>
+                                                <option value="Ne">Ne</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="desky_povrch_vnitrek">
+                                <ul>
+                                    <li>
+                                        <h4>Povrchová úprava - vnitřek:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="desky_povrch_vnitrek">
+                                                <option value="bez povrchové úpravy">bez povrchové úpravy
+                                                </option>
+                                                <option value="laminace">laminace</option>
+                                                <option value="lak">lak</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                            <div class="polozka1" id="desky_povrch_vnejsek">
+                                <ul>
+                                    <li>
+                                        <h4>Povrchová úprava - vnějšek:</h4>
+                                    </li>
+                                    <li>
+                                        <div class="pole2">
+                                            <select name="desky_povrch_vnejsek">
+                                                <option value="bez povrchové úpravy">bez povrchové úpravy
+                                                </option>
+                                                <option value="laminace">laminace</option>
+                                                <option value="lak">lak</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="clear"></div>
+                            </div>
+                        </div><!-- /prezentacni_desky -->
+
+                        <div class="polozka1">
+                            <ul>
+                                <li>
+                                    <h4>Tisková data: <br>(do 20 MB)</h4>
+                                </li>
+                                <li>
+                                    <div class="pole1"><input type="file" name="file" class="input4" /></div>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="polozka2">
+                            <h5>Doplňující informace: (nepovinné)</h5>
+                            <div class="textarea"><textarea name="info" class="textarea1" /></textarea></div>
+                        </div>
+                        <div id="load_img">
+                        </div>
+                        <h6 id="potvrzeni_status"></h6>
+                        <div id="tlacitko">
+                            <div class="odeslat"><input id="form_button" class="odeslat_btn g-recaptcha"
+                                    data-sitekey="6LdHqtYUAAAAAIgjbFx_ON1OdMLnXmpXrOkGdTqo" data-callback='onSubmit'
+                                    type="submit" value="" />
+                                <h6>odeslat</h6>
+                            </div>
+                        </div>
+                    </form>
+
+                </div><!-- /pt_form_container-->
+            </div><!-- /pt_form-->
+        </div><!-- /pt_vlevo-->
+
+        <div class="pt_vpravo">
+            <div class="pt_info">
+                <div class="pt_info_container">
+                    <h2>Tipy, jak nám poslat tiskové podklady</h2>
+                    <div class="tipy">
+                        <div class="tip">
+                            <ul>
+                                <li>
+                                    <h4>1</h4>
+                                </li>
+                                <li>
+                                    <p>Tisková data je nejvhodnější předat ve formátu Adobe PDF a to nejlépe dle
+                                        PDF/X-1a či PDF/X-4.</p>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tip">
+                            <ul>
+                                <li>
+                                    <h4>2</h4>
+                                </li>
+                                <li>
+                                    <p>Soubor musí být kompozitní CMYK nebo stupně šedi (ne v RGB nebo Lab).
+                                        <br> Přímé barvy nadefinovány dle Pantone nechte nepřevedené pouze
+                                        tehdy, budou-li se jako přímé tisknout.</p>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tip">
+                            <ul>
+                                <li>
+                                    <h4>3</h4>
+                                </li>
+                                <li>
+                                    <p>Obrázky by měly mít při rozměru 1:1 rozlišení 300 dpi, perokresby a jemná
+                                        grafika 600-1200 dpi.</p>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tip">
+                            <ul>
+                                <li>
+                                    <h4>4</h4>
+                                </li>
+                                <li>
+                                    <p>U všech dokumentů nastavte ořezové značky.</p>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tip">
+                            <ul>
+                                <li>
+                                    <h4>5</h4>
+                                </li>
+                                <li>
+                                    <p>Pokud je barva nebo obrázek do krajů stránky, je nutné nastavit přesahy
+                                        (spad) minimálně 2 mm.</p>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tip">
+                            <ul>
+                                <li>
+                                    <h4>6</h4>
+                                </li>
+                                <li>
+                                    <p>K souborům pro tisk je nutné přiložit maketu, odpovídající datovým
+                                        podkladům, ze které je patrný výsledný formát tiskoviny.</p>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="tip">
+                            <ul>
+                                <li>
+                                    <h4>7</h4>
+                                </li>
+                                <li>
+                                    <p>Lze zasílat pouze soubory do max. velikosti 20MB. Při překročení této
+                                        velikosti nahrajte soubor např. přes leteckou poštu a odkaz zkopírujte
+                                        do poznámkového pole (doplnění). Děkujeme za pochopení</p>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div><!-- /tipy-->
+                <div class="pt_kontakt">
+                    <h3>Potřebujete poradit? Kontaktujte nás!</h3>
+                    <div class="pt_kontakt_container">
+                        <h6 class="pt_tel">+420 778 482 883?</h6>
+                        <h6 class="pt_mail">info@bekros.cz</h6>
+                    </div>
+                </div>
+            </div><!-- /pt_info-->
+        </div><!-- /pt_vpravo-->
+
+        <div class="clear">
+        </div>
+
+    </div><!-- /poptat_tisk -->
+</div><!-- /content_pt -->

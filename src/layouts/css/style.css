@@ -1,0 +1,2001 @@
+@import "reset.css";
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic|PT+Sans+Narrow:700,400&subset=latin,latin-ext);
+
+
+
+@media screen {}
+
+@media screen {
+	div#preloader {
+		position: absolute;           
+		left: -9999px;
+		top:  -9999px;
+		}
+	div#preloader img {
+		display: block;
+		}
+	}
+  
+  
+  
+  
+.clear { 		
+			clear:both;
+			width:960px;
+			font-size:0px;
+			margin:0;
+			padding:0;
+			border:0; 
+} 
+      
+      
+body {	
+		font-family: 'PT Sans', sans-serif;
+    background: url('../grafika/bg.jpg') repeat left top;
+    color:#000000;
+    font-size:14px;
+}
+
+header {
+    background: url('../grafika/header_bg.jpg') no-repeat top center;    
+    height:690px; 
+    font-size:14px;
+}
+
+.wrapper {
+    
+    margin: 0 auto 0 auto;
+    width:960px;
+}
+
+:-moz-any-link:focus {
+  outline: none;
+}
+
+ul {
+				padding:0px 0px 0px 0px;
+}
+
+li {
+    list-style:none;
+    display:inline;
+    margin:0px 0px 0px 0px;
+    float:left;
+}
+
+
+
+
+/* HEADER
+------------------------------*/
+
+.kontakt {
+	 position:absolute;
+    background: url('../grafika/kontakt_bg.png') no-repeat left top;
+    z-index: 2;
+    width:62px;
+    height:62px;
+    margin:25px 0px 0px 750px;
+    cursor:pointer;  
+}
+
+.kontakt p {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    width:42px;
+    font-size:16px;
+    font-weight:bold;
+    text-align:center;
+    padding: 20px 5px 0px 5px;
+}
+
+.kosik {
+	 position:absolute;
+    background: url('../grafika/kosik_bg.png') no-repeat left top;
+    z-index: 2;
+    width:110px;
+    height:110px;
+    margin:10px 0px 0px 830px;
+    cursor:pointer; 
+
+}
+
+.kosik_bottom {
+	 position:fixed;
+   top:10px;
+   right:10px;
+    background: url('../grafika/kosik_bg.png') no-repeat left top;
+    z-index: 100;
+    width:110px;
+    height:110px;
+    cursor:pointer; 
+
+}
+
+.kosik p, kosik_bottom p {
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    width:90px;
+    height:51px;
+    font-size:15px;
+    text-align:center;
+    font-style:italic;
+    line-height:17px;
+    text-decoration:underline;
+    padding: 45px 10px 0px 10px;
+    overflow:hidden;
+}
+
+.c_zboz {  
+    font-family: 'PT Sans', sans-serif; 
+    font-size:14px !important;
+    padding: 40px 10px 0px 10px !important;
+    width:90px;
+    height:51px;
+    color:#FFFFFF;
+    font-size:15px;
+    text-align:center;
+    font-style:italic;
+    line-height:17px;
+    text-decoration:underline;
+}
+
+.rychly_kontakt {
+    padding: 35px 0px 0px 0px;	
+}
+
+.rychly_kontakt li {
+    list-style:none;
+    display:inline;
+    margin:0px 0px 0px 0px;
+    padding:0px 10px 0px 10px;
+    float:left;
+}
+
+.rk_tel {
+    background: url('../grafika/tel_ico.png') no-repeat top left;
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    width:190px;
+    height:18px;
+    font-size:15px;
+    font-weight:bold;
+    padding: 4px 0px 0px 22px;
+}
+
+.rk_mail {
+    background: url('../grafika/mail_ico.png') no-repeat top left;
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    width:130px;
+    height:18px;
+    font-size:15px;
+    font-weight:bold;
+    padding: 4px 0px 0px 30px;
+}
+
+.logo {
+    background: url('../grafika/logo.png') no-repeat center bottom;
+    width:960px;
+    height:344px;	
+    padding:0px 0px 0px 0px;
+}
+
+nav {
+    margin: 50px auto 0 auto;
+    width:680px;
+    padding: 0 0 0 0px;	
+}
+
+
+
+nav li {
+    list-style:none;
+    display:inline;
+    margin:0px 0px 0px 0px;
+    padding:0px 10px 0px 10px;
+    float:left;
+}
+
+.nav_polozka {
+    background: url('../grafika/nav_bg.png') no-repeat center top;
+    color:#B7284D;
+    width:150px;
+    height:150px;
+    line-height:150px;
+    cursor:pointer;
+}
+
+.nav_polozka p {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    width:150px;
+    font-size:21px;
+    font-weight:bold;
+    text-align:center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;  
+}
+
+/* FOOTER
+------------------------------*/
+
+.footer_text {
+  padding: 0 0 50px 20px;
+
+}
+
+.footer_img {
+  
+  background: url('../grafika/footer_img.jpg') no-repeat center top;
+  height:232px
+
+}
+
+.footer_vlevo	{	
+    float:left;
+    position:relative;
+    padding: 0px 0px 0px 0px;
+}
+			
+.footer_vpravo		{	
+    float:right;
+    position:relative;
+    padding: 0px 0px 0px 0px;
+}
+
+footer p {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    font-size:14px;
+    line-height:15px;
+    padding: 0 0 0 0;  
+}
+
+footer b {
+    font-weight:bold;  
+}
+
+.footer_vlevo p {
+    text-align:right;
+    width:460px;  
+}
+
+.footer_vpravo p {
+    text-align:left;
+    width:460px; 
+}
+
+
+
+/* CO UMÃME
+------------------------------*/
+
+.content_cu {
+    width:780px;
+    margin: 0 auto 100px auto;
+}
+
+
+
+.co_umime {
+    padding: 30px 0 0 0;
+}
+
+.co_umime .polozka {
+    width:185px;
+    height: 135px;
+    overflow:hidden;
+    margin:0 0 25px 0;
+}
+
+.co_umime li {
+    list-style:none;
+    display:inline;
+    margin:0px 0px 0px 0px;
+    padding:0px 5px 0px 5px;
+    float:left;
+}
+
+.co_umime img   {
+    
+    margin: 10px 0 0 64px;
+}
+
+.co_umime h2 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    width:157px;
+    font-size:18px;
+    text-align:center;
+    padding: 0 19px 0 19px;  
+}
+
+.additional {
+    width:185px;
+    height: 135px;
+    overflow:hidden;
+    display:none;
+}
+
+.additional p {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    width:175px;
+    font-size:15px;
+    text-align:center;
+    padding: 20px 5px 0px 5px;  
+}
+
+.additional_btn  { 
+    background-color:#B7284D;
+    width:100px;
+    height:32px;
+    margin: 10px auto 0 auto; 
+    cursor:pointer;
+}
+
+.ot_btn  { 
+    width:138px !important;
+}
+
+.additional h5 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    width:90px;
+    font-size:16px;
+    text-align:center;
+    padding: 6px 5px 0px 5px; 
+    font-weight:bold; 
+}
+
+.ot_btn h5 { 
+    width:125px !important;
+}
+
+
+@media (max-width: 960px) {
+    
+header {
+  background: url('../grafika/header_bg.jpg') no-repeat top center;    
+  width:960px;
+  height:690px; 
+  font-size:14px;
+}
+
+.footer_img {
+  
+  background: url('../grafika/footer_img.jpg') no-repeat center top;
+  width:960px;
+  height:232px
+
+}
+
+}
+
+
+/* POPTAT TISK
+------------------------------*/
+
+.content_pt {
+    width:960px;
+    padding: 0 0 100px 0;
+}
+
+.pt_vlevo	{	
+    float:left;
+    position:relative;
+    width:450px;
+    padding: 0px 0px 0px 0px;
+}
+			
+.pt_vpravo		{	
+    float:right;
+    position:relative;
+    width:450px;
+    padding: 0px 0px 0px 0px;
+}
+
+.pt_form {
+  
+  background: url('../grafika/pt_form_bg.png') repeat-y center top;
+  width:450px;
+  padding:0 0 15px 0;
+
+}
+
+.pt_form_container {
+  
+  padding: 20px 0 0 20px;
+
+}
+
+.pt_form h2  {
+    background: url('../grafika/pt1.png') no-repeat left top;
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    width:420px;
+    font-size:18px;
+    padding: 7px 0px 30px 50px; 
+    font-weight:bold; 
+}
+
+.polozka1 {
+    padding:0px 0px 7px 0px;
+}  
+
+.polozka2 {
+    padding:10px 0px 0px 0px;
+}  
+
+.pole1 {
+    background: url('../grafika/pole1_bg.png') no-repeat bottom left;
+    width:265px;
+    height:27px;
+    padding:0px 0px 0px 0px;
+} 
+
+.input1 {
+    font-family: 'PT Sans', sans-serif; 
+    color: #000000;
+    width:240px;
+    margin: 4px 0px 0px 6px;
+    font-size: 16px;
+    background: none;
+  	border: 0;
+    outline:0; 
+} 
+
+.pole3 {
+    background: url('../grafika/pole1_bg.png') no-repeat bottom left;
+    width:82px;
+    height:27px;
+    padding:0px 0px 0px 0px;
+    margin:0 9px 0 0;
+} 
+
+.input3 {
+    font-family: 'PT Sans', sans-serif; 
+    color: #000000;
+    width:60px;
+    margin: 4px 0px 0px 6px;
+    font-size: 16px;
+    background: none;
+  	border: 0;
+    outline:0; 
+} 
+
+.input4 {
+    font-family: "Open Sans Condensed",Arial,Helvetica;
+    color: #3F3F3F;
+    width:200px;
+    padding: 0px 0px 0px 0px;
+    font-size: 13px; 
+    overflow:hidden;
+    background: none;
+  	border: 0;
+    outline:0;
+    margin: 3px 0px 0px 6px; 
+    
+    
+} 
+
+
+
+.textarea1 {
+    padding: 4px 0 0 6px;
+    line-height: 16px;
+    font-family: 'PT Sans', sans-serif; 
+    color: #000000;
+    width:386px;
+    height:135px;
+    font-size: 15px;
+    background: none;
+  	border: 0;
+    outline:0; 
+    resize:none;
+    overflow:hidden;
+} 
+
+.textarea {
+    background: url('../grafika/textarea.png') no-repeat bottom left;
+    width:405px;
+    height:140px;
+    padding:10px 0px 0px 0px;
+}   
+
+.pt_form h4, .adm_form h4, .ot_form h4  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    width:138px;
+    font-size:16px;
+    padding: 7px 0px 0px 0px;  
+}
+
+.ot_form h5  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    width:145px;
+    font-size:16px;
+    padding: 7px 0px 0px 0px;  
+}
+
+.pt_form h5  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    width:230px;
+    font-size:16px;
+    padding: 7px 0px 0px 0px;  
+}
+
+#potvrzeni_status  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    width:350px;
+    font-size:18px;
+    padding: 7px 0px 0px 0px; 
+    font-weight:bold; 
+}    
+
+.pole2 {
+    background: url('../grafika/pole2_bg.png') no-repeat bottom left;
+    padding: 0;
+    margin: 0;
+    width: 265px;
+    height: 27px;
+    overflow: hidden;
+}
+
+.pole2 select {
+    padding:0 0 0 5px;
+    width: 260px;
+    height: 29px;
+    border: none;
+    font-size: 15px;
+    color: #000000;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.pole2 select:focus {
+    outline: none;
+}
+
+.odeslat {
+    background: url('../grafika/odeslat.png') no-repeat bottom right;
+	  width:62px;
+	  height:62px;
+    overflow:hidden;
+    margin: 20px 0 0 337px;
+} 
+
+.odeslat_btn {
+    padding:0px 0px 0px 10px;
+    margin:0;
+    text-align:left;
+    width:62px;
+	  height:62px;
+    overflow:hidden;
+    cursor:pointer; 
+    background: none;
+  	border: 0;
+    outline:0; 
+}
+
+.odeslat h6 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    font-size:15px;
+    padding: 0px 0px 0px 0px; 
+    font-weight:bold; 
+}
+
+.pt_info {
+  
+  background: url('../grafika/pt_info_bg.png') repeat-y center top;
+  width:450px;
+  padding:0px 0px 15px 0px;
+
+}
+
+.pt_info h2  {
+    background: url('../grafika/pt2.png') no-repeat left top;
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    width:420px;
+    font-size:18px;
+    padding: 7px 0px 30px 43px; 
+    font-weight:bold; 
+}
+
+.pt_info_container {
+  
+  padding: 20px 0 0 20px;
+
+}
+
+.tipy {
+  padding:0 0 20px 3px;
+}
+
+.tip {
+  padding:0 0 10px 0;
+}
+
+.pt_info h4  {
+    background: url('../grafika/tipy_bg.png') no-repeat left top;
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    width:36px;
+    font-size:16px;
+    padding: 4px 0px 5px 7px;
+    font-weight:bold;  
+}
+
+.pt_info p  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    width:350px;
+    font-size:15px;
+    padding: 0px 0px 0px 0px;  
+}
+
+.pt_info h3  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    width:420px;
+    font-size:18px;
+    padding: 20px 0px 10px 25px; 
+    font-weight:bold; 
+}
+
+.pt_kontakt {
+  
+  background: url('../grafika/pt_kontakt.png') repeat-y bottom right;
+  width:418px;
+  height:134px;
+  padding:0 0 0px 15px;
+
+}
+
+.pt_kontakt_container {
+
+  padding:10px 0 0px 30px;
+
+}
+
+.pt_tel {
+    background: url('../grafika/tel_ico.png') no-repeat top left;
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    height:18px;
+    font-size:17px;
+    padding: 4px 0px 6px 30px;
+}
+
+.pt_mail {
+    background: url('../grafika/mail_ico.png') no-repeat top left;
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    height:18px;
+    font-size:17px;
+    padding: 4px 0px 0px 30px;
+}
+
+
+/* OBJEDNAT TISKOPISY
+------------------------------*/
+
+.content_ot {
+    width:926px;
+    margin: 0 auto 100px auto;
+}
+
+
+
+.seznam .hlavicka {
+
+    padding:0 0 10px 0;
+
+}
+
+.seznam td {
+    padding:0 1px 4px 0;
+    vertical-align: top;
+}
+
+
+.seznam .hl_1 {
+    width:80px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .hl_2 {
+    width:415px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .hl_3 {
+    width:65px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .hl_4 {
+    width:160px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .hl_5 {
+    width:76px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .hl_6 {
+    width:100px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .hl_7 {
+    width:85px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam h2 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    font-size:15px;
+    padding: 7px 0px 0px 5px;
+    font-weight:bold;
+}
+
+.hl_6 h2 {
+    
+    padding: 7px 0px 0px 17px;
+} 
+
+.seznam .pol_1_1 {
+    width:80px;
+    height:30px;
+}
+
+.seznam .pol_1_2 {
+    width:415px;
+    height:30px;
+}
+
+.seznam .pol_1_3 {
+    width:65px;
+    height:30px;
+}
+
+.seznam .pol_1_4 {
+    width:160px;
+    height:30px;
+}
+
+.seznam .pol_1_5 {
+    width:76px;
+    height:30px;
+}
+
+.seznam .pol_1_7 {
+    width:85px;
+    height:30px;
+}
+
+
+
+.seznam .sipka_l {
+    width:20px;
+    height:30px;
+    margin: 0px 0px 0px 0px;
+    float:left;
+}
+
+.seznam .sipka_p {
+    width:20px;
+    height:30px;
+    margin: 0px 0px 0px 0px;
+    float:right;
+}
+
+.seznam .pol_1_6_1 {
+    background: url('../grafika/ot_kusy1.png') no-repeat bottom;
+    width:91px;
+    height:30px;
+    margin: 0 0px 0 5px;
+}
+
+.seznam .pol_1_6_2 {
+    background: url('../grafika/ot_kusy2.png') no-repeat bottom;
+    width:91px;
+    height:30px;
+    margin: 0 0px 0 5px;
+}
+
+
+
+.seznam h3 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#494949;
+    font-size:14px;
+    padding: 7px 0px 0px 5px;
+}
+
+.seznam h3 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#494949;
+    font-size:14px;
+    padding: 7px 0px 0px 5px;
+}
+
+.pol_1_1 h3 {
+    background: url('../grafika/nahled.png') no-repeat top left;
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    font-size:13px;
+    padding: 8px 0px 0px 28px;
+    
+} 
+
+
+
+.input5 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#494949;
+    font-size:15px;
+    width:38px;
+    text-align:center;
+    font-weight:bold;
+    margin: 4px 0px 0px 4px;
+    background: none;
+  	border: 0;
+    outline:0; 
+}
+
+
+
+.cara {
+    font-size:1px;
+    width:900px;
+    height:1px;
+    margin: 20px 0px 0px 0px;
+    background-color: #B7284D;
+} 
+
+.pridat_do_kosiku {
+    background: url('../grafika/pridat_do_kosiku.png') no-repeat top left;
+    font-size:1px;
+    width:150px;
+    height:48px;
+    margin: 10px 0px 0px 752px;
+}  
+
+.pridat_btn {
+    background: none;
+    width:150px;
+    height:48px;
+  	border: 0;
+    outline:0;
+    cursor:pointer;  
+}
+
+
+/* OBJEDNAT TISKOPISY - FILTRACE
+------------------------------*/
+
+.filtrace	{	
+    padding: 10px 0px 20px 0px;
+}
+
+.filtrace_vlevo	{	
+    float:left;
+    position:relative;
+    padding: 0px 0px 0px 0px;
+    width:550px;
+}
+			
+.filtrace_vpravo		{	
+    float:right;
+    position:relative;
+    padding: 0px 0px 0px 0px;
+    width:373px;
+}
+
+.filtrace h4 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    font-size:16px;
+    padding: 6px 20px 0px 0px;
+    font-weight:bold;
+    
+} 
+
+.filtrace h5 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    font-size:15px;
+    padding: 7px 30px 0px 0px;
+    
+} 
+
+.hledat {
+    
+    width:240px;
+    height:30px;
+    background-color:white;    
+    padding: 0px 0px 0px 0px;
+    margin: 0 10px 0 0;
+    
+}
+
+.hledat_btn {
+    background: url('../grafika/hledat_btn.png') no-repeat top left;
+    width:30px;
+    height:31px;    
+    padding: 0px 0px 0px 0px;
+    
+}  
+
+.input_hledat {
+    font-family: 'PT Sans', sans-serif; 
+    color: #000000;
+    width:226px;
+    margin: 4px 0px 0px 6px;
+    font-size: 16px;
+    background: none;
+  	border: 0;
+    outline:0; 
+} 
+
+.filtrace_radio {
+    margin: 8px 3px 0px 0px;
+}
+         
+.hledat_submit {
+    width:30px;
+    height:31px;
+    cursor:pointer;
+    background: none; 
+    border: 0;
+    outline:0;
+    
+}
+
+
+
+    
+
+
+/* ADMINISTRACE
+------------------------------*/
+
+.content_adm {
+    width:960px;
+    padding:0 0 100px 0;
+}
+
+.adm_form h2  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    width:420px;
+    font-size:18px;
+    padding: 7px 0px 30px 0px; 
+    font-weight:bold; 
+}  
+
+.ct_1, .wt_1 {
+    margin: 30px auto 0 auto;
+} 
+
+.pol_space {
+    
+    width:34px;
+}
+
+.pol_smazat, .pol_upravit {
+    
+    margin:8px 0 0 0;
+}
+
+.administrace_hlavni h1 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    font-size:18px;
+    padding: 0px 0px 60px 0px; 
+    font-weight:bold; 
+} 
+
+
+.administrace_hlavni h2 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    font-size:16px;
+    padding: 0px 0px 0px 0px; 
+    font-weight:bold; 
+}  
+
+.administrace_seznam {
+    width:860px;
+} 
+
+.administrace_cara {
+    font-size:1px;
+    width:900px;
+    height:1px;
+    margin: 5px 0px 10px 0px;
+    background-color: #B7284D;
+}
+
+.administrace_hlavni h3 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:14px;
+    padding: 0px 0px 0px 0px;
+}
+
+.administrace_btn {
+    
+    padding: 8px 8px 8px 8px;
+    background-color: #FFFFFF;
+    margin: 0px 10px 10px 0px;
+}
+
+.administrace_container {
+    
+    padding: 0px 0px 40px 0px;
+}  
+
+/* OBJEDNÃVKA
+------------------------------*/
+
+.content_obj {
+    width:920px;
+    margin: 0 auto 200px auto;
+}
+
+.objednavka .nadpis {
+    width:900px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.objednavka .nadpis h2{
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    font-size:15px;
+    padding: 7px 0px 0px 5px;
+    font-weight:bold;
+}
+
+
+.kat td {
+    padding:0 1px 4px 0;
+    vertical-align: top;
+}
+
+.kat {
+    padding:20px 0 20px 5px;
+}
+
+.obj_polozky {
+    padding:0px 0 20px 5px;
+}
+
+
+.kat h3 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:15px;
+    padding: 0px 0px 0px 0px;
+    font-weight:bold;
+}
+
+.obj_polozky h4 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:15px;
+    padding: 0px 0px 0px 0px;
+    font-weight:bold;
+}
+
+.obj_polozky h5 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:15px;
+    padding: 0px 0px 0px 0px;
+}
+
+.objednavka .pol_1 {
+    width:70px;
+    height:20px;
+}
+
+.objednavka .pol_2 {
+    width:490px;
+    height:20px;
+}
+
+.objednavka .pol_3 {
+    width:75px;
+    height:20px;
+}
+
+.objednavka .pol_4 {
+    width:75px;
+    height:20px;
+}
+
+.objednavka .pol_5 {
+    width:95px;
+    height:20px;
+}
+
+.objednavka .pol_6 {
+    width:80px;
+    height:20px;
+}
+
+.obj_polozky td {
+    padding:0 1px 0px 0;
+    vertical-align: top;
+}
+
+.obj_cara {
+    font-size:1px;
+    width:900px;
+    height:1px;
+    margin: 5px 0px 0px 0px;
+    background-color: #C9C9C9;
+} 
+
+.obj_cara2 {
+    font-size:1px;
+    width:900px;
+    height:2px;
+    margin: 20px 0px 0px 0px;
+    background-color: #B7284D;
+} 
+
+.delete {
+    background: url('../grafika/delete.png') no-repeat top left;
+    width:17px;
+    height:17px;
+    margin: 0px 0px 0px 0px;
+} 
+
+.edit {
+    background: url('../grafika/edit.png') no-repeat top left;
+    width:17px;
+    height:17px;
+    margin: 0px 0px 0px 0px;
+} 
+
+.objednat_btn {
+    background: url('../grafika/objednat.png') no-repeat top left;
+    width:108px;
+    height:48px;
+    margin: 0px 0px 0px 0px;
+}
+
+.pridat_dalsi_zbozi_btn {
+    background: url('../grafika/pridat_dalsi_zbozi.png') no-repeat top left;
+    width:129px;
+    height:30px;
+    margin: 9px 0px 0px 0px;
+}
+
+.obj_nav li  {
+  padding: 0 0px 0 50px;
+} 
+
+.obj_nav {
+    padding: 30px 0 0 0;
+    width:355px;
+    float:right;
+}
+
+.obj_soucty {
+    margin: 30px 30px 0 0;
+    float:right;
+}  
+
+.soucet_doprava {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:15px;
+    padding: 0px 0px 0px 20px;
+    font-weight:bold;
+}
+
+.soucet_celkem {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:16px;
+    padding: 0px 0px 0px 0px;
+    font-weight:bold;
+}
+
+.celkova_cena {
+    background-color: #EFEFEF;
+    margin: 20px 0px 0px 0px;
+    padding: 20px 20px 20px 20px;
+}
+
+
+.suma {
+    
+    font-size:18px;
+    padding-left:10px;
+}
+
+/* OBJEDNAT - ZÃKAZNÃK
+------------------------------*/
+
+.content_zak {
+    width:960px;
+    padding:0 0 100px 0;
+}
+
+.ot_form h2  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    width:420px;
+    font-size:18px;
+    padding: 7px 0px 30px 0px; 
+    font-weight:bold; 
+}
+
+
+.ot_form {
+  
+  background: url('../grafika/pt_form_bg.png') repeat-y center top;
+  width:450px;
+  padding:0 0 15px 0;
+
+}
+
+.ot_form_container {
+  
+  padding: 20px 0 0 20px;
+
+}
+
+.ot_info h2  {
+    background: url('../grafika/ot_doprava.png') no-repeat left top;
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    width:420px;
+    font-size:18px;
+    padding: 3px 0px 30px 50px; 
+    font-weight:bold; 
+}
+
+.ot_vlevo	{	
+    float:left;
+    position:relative;
+    width:450px;
+    padding: 0px 0px 0px 0px;
+}
+			
+.ot_vpravo		{	
+    float:right;
+    position:relative;
+    width:450px;
+    padding: 0px 0px 0px 0px;
+}
+
+.ot_info {
+  
+  background: url('../grafika/pt_info_bg.png') repeat-y center top;
+  width:450px;
+  padding:0px 0px 15px 0px;
+
+}
+
+.ot_info_container {
+  
+  padding: 20px 0 60px 20px;
+
+}
+
+.ot_info_content {
+  padding:0 0 20px 3px;
+}
+
+.ot_info p  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    width:350px;
+    font-size:15px;
+    padding: 0px 0px 0px 0px;  
+}
+
+.ot_info h3  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    width:420px;
+    font-size:18px;
+    padding: 20px 0px 10px 25px; 
+    font-weight:bold; 
+}
+
+/* OBJEDNAT - SOUHRN
+------------------------------*/
+
+
+
+.souhrn .pol_1 {
+    width:50px;
+    height:20px;
+}
+
+.souhrn .pol_2 {
+    width:580px;
+    height:20px;
+}
+
+.souhrn .pol_3 {
+    width:75px;
+    height:20px;
+}
+
+.souhrn .pol_4 {
+    width:75px;
+    height:20px;
+}
+
+.souhrn .pol_5 {
+    width:95px;
+    height:20px;
+}
+
+.souhrn .pol_6 {
+    width:80px;
+    height:20px;
+}
+
+.souhrn_vlevo	{	
+    float:left;
+    position:relative;
+    width:450px;
+    padding: 20px 0px 0px 0px;
+}
+			
+.souhrn_vpravo		{	
+    float:right;
+    position:relative;
+    width:450px;
+    padding: 80px 0px 0px 0px;
+}
+
+.zakaznik {
+  
+  background: url('../grafika/pt_form_bg.png') repeat-y left top;
+  width:350px;
+  padding:15px 0 30px 15px;
+
+}
+
+.zakaznik h2  {
+    background: url('../grafika/zakaznik.png') no-repeat left top;
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:18px;
+    padding: 7px 0px 15px 40px; 
+    font-weight:bold; 
+}
+
+.zakaznik h3  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:15px;
+    padding: 10px 0px 5px 40px; 
+    font-weight:bold; 
+}
+
+.zakaznik h4  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:15px;
+    padding: 0px 0px 0px 40px;
+    line-height:17px;
+}
+
+.souhrn_nadpis {
+    width:900px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.souhrn_nadpis h2{
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    font-size:15px;
+    padding: 7px 0px 0px 5px;
+    font-weight:bold;
+}
+
+.content_souhrn {
+    width: 920px;
+    margin: 0px auto 200px;
+}
+
+.dokoncit_objednavku_btn {
+    background: url('../grafika/dokoncit_objednavku.png') no-repeat top left;
+    width:182px;
+    height:48px;
+    margin: 0px 0px 0px 0px;
+}
+
+.zpet_btn {
+    background: url('../grafika/zpet.png') no-repeat top left;
+    width:58px;
+    height:48px;
+    margin: 9px 0px 0px 0px;
+}
+
+.space1 {
+    width:480px;
+    height:48px;
+    margin: 0px 0px 0px 0px;
+}
+
+.space2 {
+    width:50px;
+    height:48px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+
+.souhrn_nav {
+    padding: 30px 0 0 0;
+}
+
+.dalsi {
+    background: url('../grafika/dalsi.png') no-repeat bottom right;
+	  width:62px;
+	  height:62px;
+    overflow:hidden;
+    margin: 20px 0 0 337px;
+}
+
+.doruceni_zpet {
+    position: absolute;
+    margin: 28px 0 0 0px;
+}
+
+/* OBJEDNAT - DOKONÄŒENÃ
+------------------------------*/
+
+.content_objednat {
+    width:960px;
+    height:300px;
+    padding:0 0 100px 0;
+}
+
+.correct_text {
+    background: url('../grafika/correct.png') no-repeat top left;
+	  width:400px;
+    height:80px;
+    overflow:hidden;
+    padding:15px 0 0 80px;
+    margin: 100px auto 0 auto;
+    
+}
+
+.warning_text {
+    background: url('../grafika/warning.png') no-repeat top left;
+	  width:400px;
+    height:80px;
+    overflow:hidden;
+    padding:15px 0 0 80px;
+    margin: 100px auto 0 auto;
+}
+
+.warning_text p, .correct_text p  {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:18px;
+    padding: 0px 0px 0px 0px; 
+}   
+
+.ct_2, .wt_2 {
+    margin: 100px auto 0 auto;
+} 
+
+
+
+/* OBJEDNÃVKY------------------------------*/
+
+.content_objednavky {
+    width:960px;
+    height:300px;
+    padding:0 0 100px 0;
+    margin:0 auto 0 auto;
+}
+
+.seznam .objednavky_hl_1 {
+    width:350px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .objednavky_hl_2 {
+    width:280px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .objednavky_hl_3 {
+    width:160px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .objednavky_hl_4 {
+    width:150px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .objednavky_hl_5 {
+    width:140px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .objednavky_hl_6 {
+    width:100px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .objednavky_hl_7 {
+    width:65px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.c_grey {
+    background-color:#F2F2F2;
+}
+
+.c_white {
+    background-color:#FFFFFF;
+}
+
+.seznam .objednavky_pol_1_1 {
+    width:350px;
+    height:30px;
+    
+}
+
+.seznam .objednavky_pol_1_2 {
+    width:280px;
+    height:30px;
+}
+
+.seznam .objednavky_pol_1_3 {
+    width:160px;
+    height:30px;
+}
+
+.seznam .objednavky_pol_1_4 {
+    width:150px;
+    height:30px;
+}
+
+.seznam .objednavky_pol_1_5 {
+    width:140px;
+    height:30px;
+}
+
+.seznam .objednavky_pol_1_6 {
+    width:100px;
+    height:30px; 
+}
+
+.administrace_wrapper {
+    
+    margin: 30px 0px 100px 30px;
+}
+
+.objednavky_space {
+    
+    width:20px;
+}
+
+.ct_3, .wt_3 {
+    margin: 30px 0 0 150px;
+}
+
+/* OBJEDNÃVKY - DETAIL ----------------*/ 
+
+.popisek {
+    background-color: #B7284D;
+    width: 110px;
+    padding:6px;
+    margin-right:10px;
+}
+
+.hodnota {
+    background-color: #FFFFFF;
+    width: 400px;
+    padding:5px 5px 5px 5px;
+}
+
+.popisek h3{
+    font-family: 'PT Sans', sans-serif; 
+    color:#FFFFFF;
+    font-size:14px;
+    padding: 0px 0px 0px 0px;
+    font-weight:bold;
+}
+
+.hodnota h4 {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:15px;
+    padding: 0px 0px 0px 0px;
+}
+
+.detail_polozka {
+    
+    padding: 0px 0px 4px 0px;
+}
+
+
+/* HODNOTY ----------------*/ 
+
+.napoveda {
+    font-family: 'PT Sans', sans-serif; 
+    color:#000000;
+    font-size:15px;
+    padding: 3px 0px 0px 10px; 
+}    
+
+
+
+/* POPTAVKY------------------------------*/
+
+.content_poptavky {
+    width:960px;
+    height:300px;
+    padding:0 0 100px 0;
+    margin:0 auto 0 auto;
+}
+
+.seznam .poptavky_hl_1 {
+    width:250px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .poptavky_hl_2 {
+    width:280px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .poptavky_hl_3 {
+    width:140px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .poptavky_hl_4 {
+    width:220px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .poptavky_hl_5 {
+    width:100px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .poptavky_hl_6 {
+    width:100px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .poptavky_hl_7 {
+    width:65px;
+    height:30px;
+    background-color:#B7284D;
+}
+
+.seznam .poptavky_pol_1_1 {
+    width:250px;
+    height:30px;
+    
+}
+
+.seznam .poptavky_pol_1_2 {
+    width:280px;
+    height:30px;
+}
+
+.seznam .poptavky_pol_1_3 {
+    width:140px;
+    height:30px;
+}
+
+.seznam .poptavky_pol_1_4 {
+    width:220px;
+    height:30px;
+}
+
+.seznam .poptavky_pol_1_5 {
+    width:100px;
+    height:30px;
+}
+
+.seznam .poptavky_pol_1_6 {
+    width:100px;
+    height:30px; 
+}
+
+
+
+.poptavky_space {
+    
+    width:20px;
+}
+
+
+
+.poptavky_nadpis {
+    font-family: 'PT Sans', sans-serif; 
+    color:#B7284D;
+    font-size:18px;
+    padding: 0px 0px 60px 0px; 
+    font-weight:bold; 
+} 
+
+#load_img  {	
+		margin:0;
+		padding:0px 0px 0px 0px;
+		border:0;
+		width:128px;
+		height:15px;
+		background: url('../grafika/load.gif') no-repeat bottom left;
+}
+     
+.doruceni_zvyrazneni {	
+		font-weight:bold;
+    font-size:18px;
+}
+
+.sirsi {	
+		line-height:19px;
+}             
+
+
+/* KONTAKT
+------------------------------*/
+
+.content_kontakt {
+    width:960px;
+    padding: 0 0 100px 0;
+}
+
+.content_kontakt h1 {
+    font-family: "PT Sans",sans-serif;
+    color: #B7284D;
+    font-size: 18px;
+    padding: 6px 0px 0px 0px;
+    font-weight: bold;
+}
+
+.kontakt_vlevo	{	
+    float:left;
+    position:relative;
+    width:450px;
+    padding: 0px 0px 0px 0px;
+}
+			
+.kontakt_vpravo		{	
+    float:right;
+    position:relative;
+    width:450px;
+    padding: 0px 0px 0px 0px;
+}
+
+.content_kontakt ul {padding:40px 0 0 0;}
+
+.content_kontakt li {
+    width:200px;
+    height:110px;
+} 
+
+.content_kontakt h2 {
+    font-family: "PT Sans",sans-serif;
+    color: #000;
+    font-size:17px;
+    font-weight: bold;
+}
+
+.content_kontakt h3 {
+    font-family: "PT Sans",sans-serif;
+    color: #B7284D;
+    font-size: 15px;
+    padding: 0px 0px 6px 0px;
+    font-weight: bold;
+}
+
+.content_kontakt h4 {
+    font-family: "PT Sans",sans-serif;
+    color: #000;
+    width:410px;
+    font-size: 16px;
+    padding: 10px 0px 6px 0px;
+}
+
+.content_kontakt p {
+    font-family: "PT Sans",sans-serif;
+    color: #000;
+    font-size:15px;
+    padding:0 0 0px 0;
+    line-height:18px;
+}
+
+.adresa {
+    background: url('../grafika/kontakt_adresa.png') no-repeat left top;
+    height:32px;
+    padding:5px 0 0 35px;
+}
+
+.telefon {
+    background: url('../grafika/kontakt_telefon.png') no-repeat left top;
+    height:32px;
+    padding:5px 0 0 20px;
+}
+
+.mail {
+    background: url('../grafika/kontakt_mail.png') no-repeat left top;
+    height:32px;
+    padding:5px 0 0 35px;
+}
+
+.oteviracka {
+    background: url('../grafika/kontakt_oteviracka.png') no-repeat left top;
+    height:32px;
+    padding:5px 0 0 35px;
+}
+
+.fakturace {
+    background: url('../grafika/kontakt_fakturace.png') no-repeat left top;
+    height:32px;
+    padding:5px 0 0 30px;
+}
+
+.fax {
+    background: url('../grafika/kontakt_fax.png') no-repeat left top;
+    height:32px;
+    padding:5px 0 0 35px;
+}
+
+.web {
+    background: url('../grafika/kontakt_web.png') no-repeat left top;
+    height:32px;
+    padding:5px 0 0 32px;
+}
+
+
+/* O NÃS
+------------------------------*/
+
+.content_on {
+    width:960px;
+    padding: 0 0 100px 0;
+}
+
+.content_on ul {
+    padding: 50px 0px 70px 0px;
+}
+
+.content_on li {
+    width:290px;
+    padding:0 30px 0 0;
+}
+
+.content_on h1 {
+    font-family: "PT Sans",sans-serif;
+    color: #B7284D;
+    font-size: 18px;
+    padding: 6px 0px 0px 0px;
+    font-weight: bold;
+}
+
+.content_on h3 {
+    font-family: "PT Sans",sans-serif;
+    color: #B7284D;
+    font-size: 17px;
+    padding: 20px 0px 0px 0px;
+    font-weight: bold;
+    text-align:center;
+    width:221px;
+}
+
+.o_nas_01 {
+    font-family: "PT Sans",sans-serif;
+    color: #000;
+    font-size: 15px;
+    padding: 10px 0px 0px 0px;
+}
+
+.o_nas_02 {
+    font-family: "PT Sans",sans-serif;
+    color: #000;
+    font-size: 15px;
+    padding: 6px 0px 0px 0px;
+    line-height:18px;
+}
+
+.zdr {
+    background: url('../grafika/o_nas_1.png') no-repeat left bottom;
+    width:233px;
+    height:240px;
+    margin: 0 0 0 20px;
+}
+
+.ofs {
+    background: url('../grafika/o_nas_2.png') no-repeat left bottom;
+    width:233px;
+    height:240px;
+    margin: 0 0 0 20px;
+}
+
+.dig {
+    background: url('../grafika/o_nas_3.png') no-repeat left bottom;
+    width:233px;
+    height:240px;
+    margin: 0 0 0 20px;
+}
+
+.o_nas_nadpis {
+    background: url('../grafika/o_nas_nadpis_bg.png') no-repeat right top;
+    width:221px;
+    height:60px;
+    padding:0px 0px 0px 6px;
+}
+
+.zmena {
+    background-color: #F99E32;
+    width:900px;
+    height:150px;
+    padding:0px 0px 0px 6px;
+}
+
+
+
+.zmena h2 {
+    font-family: 'PT Sans', sans-serif; 
+    color:black;
+    width:850px;
+    height:18px;
+    font-size:15px;
+    font-weight:100;
+    padding: 25px 0px 0px 22px;
+}
+
+.strong {
+  font-weight:bold !important;  
+}
