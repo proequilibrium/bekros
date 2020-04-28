@@ -1,0 +1,145 @@
+let html_rec='<table id="t0">
+    <tr>
+        <td>
+            <a href="nahledy/01.jpg" target="blank">
+                <div class="pol_1_1 c_grey">
+                    <h3>náhled</h3>
+                </div>
+            </a>
+        </td>
+        <td>
+            <div class="pol_1_2 c_grey">
+                <h3>Vyúčtování výkonů v ambulantní péči</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_3 c_grey">
+                <h3>01</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_4 c_grey">
+                <h3>A5 - blok 100 listů</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_5 c_grey">
+                <h3>28 Kč</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_6_1"><span onmousedown="return false" class="sipka_l"></span><input type="text"
+                    name="kusy[1]" class="input5" value="0" /><span onmousedown="return false"
+                    class="sipka_p"></span><input type="hidden" name="tiskopis[1]" value="16" /></div>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <a href="nahledy/01s.jpg" target="blank">
+                <div class="pol_1_1 c_white">
+                    <h3>náhled</h3>
+                </div>
+            </a>
+        </td>
+        <td>
+            <div class="pol_1_2 c_white">
+                <h3>Vyúčtování výkonů v ambulantní stomatologické péči</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_3 c_white">
+                <h3>01s</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_4 c_white">
+                <h3>A5 - blok 100 listů</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_5 c_white">
+                <h3>28 Kč</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_6_2"><span onmousedown="return false" class="sipka_l"></span><input type="text"
+                    name="kusy[2]" class="input5" value="0" /><span onmousedown="return false"
+                    class="sipka_p"></span><input type="hidden" name="tiskopis[2]" value="113" /></div>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>
+            <a href="nahledy/02.jpg" target="blank">
+                <div class="pol_1_1 c_grey">
+                    <h3>náhled</h3>
+                </div>
+            </a>
+        </td>
+        <td>
+            <div class="pol_1_2 c_grey">
+                <h3>Vyúčtování výkonů v ústavní péči</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_3 c_grey">
+                <h3>02</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_4 c_grey">
+                <h3>A5 - blok 100 listů</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_5 c_grey">
+                <h3>28 Kč</h3>
+            </div>
+        </td>
+        <td>
+            <div class="pol_1_6_1"><span onmousedown="return false" class="sipka_l"></span><input type="text"
+                    name="kusy[3]" class="input5" value="0" /><span onmousedown="return false"
+                    class="sipka_p"></span><input type="hidden" name="tiskopis[3]" value="112" /></div>
+        </td>
+    </tr>
+</table>'
+    
+
+function removeSpaces(strs){
+    return strs.replace(/\s+/g, ' ').replace(/^\s/g, '').replace(/\s+$/, '')
+}
+
+function tableToJSON(table) {
+    var obj = {};
+    var row, rows = table.rows;
+    for (var i = 0, iLen = rows.length; i < iLen; i++) {
+        row = rows[i];
+        let zaznam = {}
+        console.log(removeSpaces(row.cells[0].textContent))
+        console.log(removeSpaces(row.cells[1].textContent))
+        console.log(removeSpaces(row.cells[2].textContent))
+        console.log(removeSpaces(row.cells[3].textContent))
+        console.log(row.cells[4].textContent.replace(/\s+/g, ' ').replace(/^\s/g, '').replace(/ Kč/, ''))
+        console.log('------------')
+        zaznam['kod']=removeSpaces(row.cells[1].textContent)
+        zaznam['desc']=removeSpaces(row.cells[2].textContent)
+        zaznam['pack_type']=removeSpaces(row.cells[3].textContent)
+        zaznam['price']=removeSpaces(row.cells[4].textContent.replace(/\s+/g, ' ').replace(/^\s/g, '').replace(/ Kč/, ''))
+        obj[i]=zaznam
+    }
+    return JSON.stringify(obj);
+}
+
+let jsonData = tableToJSON(document.getElementById('t0'))
+
+console.log(jsonData); // {"Name:":"Carlos","Age:":"22"}"
+
+var fs = require('fs');
+    fs.writeFile("tiskopisy.json", jsonData, function (err) {
+        if (err) {
+            console.log(err);
+        }
+    });

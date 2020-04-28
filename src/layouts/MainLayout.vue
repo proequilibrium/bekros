@@ -41,6 +41,7 @@
     </q-drawer>
 
     <q-page-container>
+      <Orders></Orders>
       <router-view />
     </q-page-container>
   </q-layout>
@@ -48,12 +49,14 @@
 
 <script>
 import EssentialLink from 'components/EssentialLink'
+import Orders from 'components/Orders'
 
 export default {
   name: 'MainLayout',
 
   components: {
-    EssentialLink
+    EssentialLink,
+    Orders
   },
 
   data () {
